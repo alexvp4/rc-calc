@@ -1,0 +1,110 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header h1 {
+  margin-bottom: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%; /* Aumentando a largura da tag main para ocupar mais espaço */
+  max-width: 800px; /* Define um limite máximo para a largura */
+}
+
+.input-group {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 90%; /* Alinhando os elementos horizontalmente */
+}
+
+.input-group label {
+  flex-basis: 40%; /* Proporção para a label */
+  text-align: left; /* Alinhamento do texto à esquerda */
+}
+
+input[type="number"],
+input[type="text"],
+select {
+  flex-basis: 55%; /* Proporção para os inputs e select */
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  width: 100%; /* Ajusta o input para ocupar o espaço definido */
+}
+
+button {
+  padding: 15px 30px; /* Aumenta o padding para fazer o botão maior */
+  background-color: #007bff; /* Cor de fundo azul padrão */
+  color: white; /* Cor do texto */
+  font-weight: bold; /* Torna o texto em negrito */
+  font-size: 16px; /* Aumenta o tamanho da fonte para melhor legibilidade */
+  border: none; /* Sem borda */
+  border-radius: 8px; /* Bordas mais arredondadas para um visual suave */
+  cursor: pointer; /* Cursor em forma de ponteiro para indicar que é clicável */
+  margin-top: 20px; /* Aumenta a margem superior */
+  transition: background-color 0.3s; /* Suaviza a transição de cores ao passar o mouse */
+}
+
+button:hover {
+  background-color: #0056b3; /* Cor de fundo mais escura ao passar o mouse */
+}
+
+.result {
+  font-weight: bold; /* Torna o texto em negrito */
+  font-size: larger;
+  color: rgb(255, 255, 255); /* Define a cor do texto para verde */
+  background-color: #222; /* Fundo mais escuro para melhor contraste */
+  padding: 10px; /* Espaçamento interno para não ficar muito colado nas bordas */
+  margin-top: 20px; /* Espaçamento acima da div */
+  border: 1px solid #ccc; /* Borda sutil para destacar o resultado */
+  border-radius: 5px; /* Bordas arredondadas para um visual mais suave */
+  text-align: center; /* Centraliza o texto dentro da div */
+  width: 90%; /* Largura alinhada com os outros campos de entrada */
+  box-shadow: 0 2px 4px rgba(0, 255, 0, 0.2); /* Sombra suave para realçar a div */
+}
+
+.result input[type="text"] {
+  width: 100%; /* Garante que o input ocupe todo o espaço disponível dentro de .result */
+  border: none; /* Remove a borda do input para integrar visualmente com o fundo */
+  background-color: transparent; /* Mantém o fundo transparente dentro da div */
+  color: inherit; /* Herda a cor da div resultante para consistência */
+  text-align: center; /* Centraliza o texto no input */
+}
+
+.result input[type="text"] {
+  flex-grow: 1; /* Faz o campo de texto expandir para ocupar todo o espaço disponível dentro de .result */
+}
+
+img {
+  width: 50px; /* Ajuste conforme seu design */
+  height: auto;
+  margin-left: 10px;
+}
+
+.warning {
+  font-weight: bold; /* Torna o texto em negrito */
+  color: yellow; /* Define a cor do texto para amarelo */
+  background-color: #222; /* Fundo mais escuro para melhor contraste */
+  padding: 10px; /* Espaçamento interno para não ficar muito colado nas bordas */
+  margin-top: 40px; /* Espaçamento acima da div */
+  border: 1px solid #ccc; /* Borda sutil para destacar o aviso */
+  border-radius: 5px; /* Bordas arredondadas para um visual mais suave */
+  text-align: center; /* Centraliza o texto dentro da div */
+  width: 90%; /* Largura alinhada com os outros campos de entrada */
+}
+
+.obs {
+ 
+    margin-top: 60px;
+}
