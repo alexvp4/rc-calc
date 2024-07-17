@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise Calc - OT</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Calculadora de Exercise Weapons - BibinOT</h1>
+    </header>
+    <main>
+      <div class="input-group">
+        <label for="value1">Preço da RC no market (gold):</label>
+        <input type="number" id="value1" />
+        <!-- <img src="path/to/your/image1.png" alt="Imagem 1" /> -->
+      </div>
+      <div class="input-group">
+        <label for="value2">Preço Castle Coin no market (gold):</label>
+        <input type="number" id="value2" />
+        <!-- <img src="path/to/your/image2.png" alt="Imagem 2" /> -->
+      </div>
+      <div class="input-group">
+        <label for="value3">Selecione a Varinha:</label>
+        <select id="value3">
+          <option value="">Selecione a varinha</option>
+          <option value="Exercise">Exercise</option>
+          <option value="Durable">Durable</option>
+          <option value="Lasting">Lasting</option>
+          <option value="Daily">Daily (só na store)</option>
+        </select>
+        <!-- <img src="path/to/your/image3.png" alt="Imagem 3" /> -->
+      </div>
+      <div class="input-group">
+        <label for="value4">Cargas:</label>
+        <input
+          type="text"
+          id="value4"
+          placeholder="Cargas - preenchido automaticamente"
+          readonly
+        />
+        <!-- <img src="path/to/your/image2.png" alt="Imagem 2" /> -->
+      </div>
+
+      <button id="calculate">Calcular</button>
+      <div class="result">
+        <label for="result">Resultado:</label>
+        <input type="text" id="result" readonly />
+      </div>
+
+      <div id="warning" class="warning" style="display: none">
+        Atenção! Caso você tenha 390 RC disponíveis, é mais vantagem comprar a
+        varinha Daily com 45k de cargas na Store!
+      </div>
+
+      <div class="obs">
+        Certifique-se de preencher corretamente as informações.
+        <br /><br />
+        Obs.: O cálculo acima apenas verifica qual a opção mais barata, não leva
+        em consideração quanto dinheiro vc tem disponível e quantas cargas vc
+        vai bater.
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
